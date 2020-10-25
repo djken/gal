@@ -5,7 +5,7 @@
     "background_color": "#ffffff",
     "display": "standalone",
     "orientation": "portrait",
-    "Scope": "/app",
+    "Scope": "/",
     "start_url": "/",
     "icons": [
       {
