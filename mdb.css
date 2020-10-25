@@ -2041,6 +2041,8 @@ h6 {
     border-left: 3px solid #4285f4 !important
 }
 
+
+
 .bq-primary .bq-title {
     color: #4285f4 !important
 }
@@ -2077,6 +2079,7 @@ h6 {
     color: #33b5e5 !important
 }
 
+
 .h1-responsive {
     font-size: 150%
 }
@@ -2094,7 +2097,7 @@ h6 {
 }
 
 .h5-responsive {
-    font-size: 135%
+    font-size: 125%
 }
 
 @media (min-width: 576px) {
@@ -12655,3 +12658,4 @@ ul.stepper li.completed a .label {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg)
 }
+

@@ -7,23 +7,59 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css.css">
     <link rel="stylesheet" href="./mdb.css">
+    <link rel="stylesheet" href="./css.css">
+    
     <title>Document</title>
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="http://127.0.0.1:5500/image-icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://127.0.0.1:5500/image-icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://127.0.0.1:5500/image-icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://127.0.0.1:5500/image-icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://127.0.0.1:5500/image-icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://127.0.0.1:5500/image-icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://127.0.0.1:5500/image-icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://127.0.0.1:5500/image-icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://127.0.0.1:5500/image-icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="http://127.0.0.1:5500/image-icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://127.0.0.1:5500/image-icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="http://127.0.0.1:5500/image-icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://127.0.0.1:5500/image-icons/favicon-16x16.png">
+    
+    <link rel="manifest" href="http://127.0.0.1:5500/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <script>
+      if('serviceWorker' in navigator){
+        window.addEventListener('load', function(){
+            navigator.serviceWorker.register('http://127.0.0.1:5500/service-w/serWor.js').then(
+            function(registration){
+                console.log('ServiceWorker registration successful with scope: ', registration.scope)
+            },
+            function (err){
+                console.log('ServiceWorker registration failed: ', err)
+            })
+        })
+    }
+    </script>
 </head>
 <body>
-  
-    <div class="my-4">
-      <img class="mx-auto d-lg-block d-none img-fluid" src="./logo1.png" alt="">
+    <div class="h1-responsive d-lg-block d-none text-center font-made py-4 font-weight-bold">
+      Choeur d'Adoration et de Louange
     </div>
+      <!-- <img class="mx-auto d-lg-block d-none img-fluid" src="./logo1.png" alt="">
+      <div class="text-ccpap-blue text-center h2-reponsive">Choeur d'Adoration et de Louange
+        <div> -->
  
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-ccpap">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         
-        <div class="text-light d-sm-block d-md-none font-made">Choeur d'Adoration et de Louange</div>
+        <div class="text-light d-sm-block d-md-none font-made h5-responsive">Choeur d'Adoration et de Louange</div>
         <div class="collapse navbar-collapse" id="navbarColor02">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
@@ -73,7 +109,7 @@
       </nav>
     
     <div class="card card-image"
-      style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+      style="background-image: url(./logo3.jpeg);">
 
       <!-- Content -->
       <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
@@ -88,7 +124,7 @@
       </div>
     </div>
     
-      <div class="container mb-5">
+      <div class="container-fluid mb-5">
           <div class="row">
             <div class="col-12 text-center display-4 bg-info">
                   <div class="">

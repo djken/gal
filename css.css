@@ -1,4 +1,12 @@
 .font-made {
     font-family: 'Parisienne', cursive;
-    font-size: 20px;
+    /* font-size: 20px; */
+}
+
+.bg-ccpap{
+    background-color: #033467;
+}
+
+.text-ccpap-blue{
+    color: #033467;
 }
